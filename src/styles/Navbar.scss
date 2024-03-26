@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  margin: 0px;
+}
+
+.Navbar-wrapper {
+  display: flex;
+  border: 2px solid #74c0fc;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  height: 10vh;
+  align-items: center;
+  padding-top: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0px;
+  .Home {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  .People {
+    // border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+  }
+  .Calendar {
+    // border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+  }
+}
