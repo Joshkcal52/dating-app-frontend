@@ -29,128 +29,23 @@ const Calendar = () => {
     };
   }, [isModalOpen]);
 
+  // Generate hours dynamically
+  const hours = [];
+  for (let i = 5; i <= 12; i++) {
+    hours.push(
+      <React.Fragment key={i}>
+        <div className="hour">{i}</div>
+        <button
+          onClick={(event) => openModal(event)}
+          className="calendar-events"
+        ></button>
+      </React.Fragment>
+    );
+  }
+
   return (
     <div className="calendar-wrapper">
-      <div className="hour">5</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">6</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">7</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">8</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">9</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">10</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">11</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">12</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">1</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">2</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">3</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">4</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">5</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">6</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">7</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">8</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">9</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">10</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">11</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
-      <div className="hour">12</div>
-      <button
-        onClick={(event) => openModal(event)}
-        className="calendar-events"
-      ></button>
-
+      {hours}
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
