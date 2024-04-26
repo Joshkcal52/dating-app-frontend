@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-// import { useAuthInfo } from "../../context/AuthContext";
+import "../styles/Login.scss";
 import { useAuthInfo } from "../context/AuthContext";
 
 export default function Login() {

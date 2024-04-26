@@ -2,28 +2,44 @@
   display: flex;
 }
 .contact {
-  width: 170px;
-  height: 230px;
-  border-radius: 20px;
-  background: #f5f5f5;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #334155;
+  color: white;
+  border-radius: 10px;
   margin: 1rem;
-  padding: 1.5rem;
-  border: 2px solid #c3c6ce;
-  transition: 0.5s ease-out;
-  overflow: visible;
-  color: rgb(134, 134, 134);
+  padding: 1rem;
+
+  button {
+    margin-top: 1rem;
+    border-style: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-radius: 10px;
+    color: #334155;
+    font-weight: bold;
+  }
 }
 
-.contact-details {
-  color: black;
-  height: 100%;
-  gap: 0.5em;
-  display: grid;
-  place-content: center;
+.add-contact-btn {
+  margin-top: 1rem;
+  border-style: none;
+  height: 2rem;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #334155;
+  color: white;
 }
 
 .contact-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+}
+.contact-notes {
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+}
+.phone-number {
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
 }
